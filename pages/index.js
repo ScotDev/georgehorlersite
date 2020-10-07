@@ -5,6 +5,8 @@ import { ThemeProvider, CSSReset, theme } from "@chakra-ui/core";
 // import customTheme from './theme'
 
 import Main from './components/Main'
+import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 const customTheme = {
   ...theme,
@@ -20,11 +22,13 @@ export default function Home() {
       <CSSReset />
       <div>
         <Head>
-          <title>Create Next App</title>
+          <title>George Horler</title>
           <link rel="icon" href="/favicon.ico" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
         </Head>
         <Main></Main>
+        <About></About>
+        <Portfolio></Portfolio>
 
       </div>
     </ThemeProvider>

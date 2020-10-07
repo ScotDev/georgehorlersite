@@ -8,7 +8,7 @@ export default function Main() {
             display="flex" flexDirection="column" alignItems="center" justifyContent="center">
             <Stack spacing={6} textAlign="center" >
                 <Heading as="h1" color="gray.50" fontSize="6xl">I'm George Horler</Heading>
-                <Text color="gray.50" height="10%" fontSize="2xl">A sexy artist</Text>
+                <Text color="gray.50" height="10%" fontSize="2xl">An artist and mixing engineer</Text>
                 <ButtonGroup spacing={4} size="lg">
                     <Button backgroundColor="teal.400" color="gray.50">See more</Button>
                     <Button>Contact</Button>
