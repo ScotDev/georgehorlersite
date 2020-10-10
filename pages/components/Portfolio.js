@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid } from '@chakra-ui/core'
+import { Grid, Divider } from '@chakra-ui/core'
 
 import PortfolioItem from './PortfolioItem';
 
@@ -50,7 +50,7 @@ const data = [
 
 
 export default function Portfolio() {
-    return (
+    return (<>
         <Grid templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]} templateRows="auto" gap={8} p={4} mb={6}  >
 
             <PortfolioItem {...data[0]}></PortfolioItem>
@@ -59,9 +59,11 @@ export default function Portfolio() {
             <PortfolioItem {...data[3]}></PortfolioItem>
             <PortfolioItem {...data[4]}></PortfolioItem>
 
+
+
         </Grid>
 
-
-
+        <Divider height="1px" width="75%" borderBottom="1px solid" borderBottomColor="gray.400"></Divider>
+    </>
     )
 }

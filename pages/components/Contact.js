@@ -54,10 +54,13 @@ export default function Contact() {
                             body: formData
                         }).then(res => {
                             console.log(res)
+
+                            // Submission time is too brief on a standard broadband connection to reliably see loading animation,
+                            // added timeout for consistency
                             setTimeout(() => {
                                 setSubmitting(false)
                                 setafterSubmitMsg("Thank you! I'll be in touch soon")
-                            }, 1500)
+                            }, 1000)
 
                             setSubmitError(false)
 
@@ -74,8 +77,6 @@ export default function Contact() {
                         setafterSubmitMsg('Message could not be sent, please try again')
                         setSubmitError(true)
                     }
-
-
 
                 }}
             >
