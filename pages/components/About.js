@@ -4,8 +4,8 @@ import { Text, Heading, Box, Button, ButtonGroup, Stack, Flex } from '@chakra-ui
 
 export default function About() {
     return (
-        <Box textAlign="center" p={6} backgroundColor="gray.50" color="teal.400">
-            <Heading as="h2" mb={8} size="2xl">About me</Heading>
+        <Box textAlign="center" p={6} m={12} color="teal.400" id="about">
+            {/* <Text fontSize="5xl" mb={6}>About me</Text> */}
             <Flex alignItems="center" justifyContent="center" flexDirection={["column", "column", "column", "row"]}>
                 <Box width={1 / 3} alignItems="center" display="flex" flexDirection="column">
                     <Heading as="h3" fontWeight={500} mb={4}>Placeholder</Heading>
