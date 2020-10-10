@@ -43,7 +43,7 @@ const data = [
 
 export default function Portfolio() {
     return (
-        <Grid templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]} templateRows="auto" gap={8} p={4} backgroundColor="gray.50" >
+        <Grid templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]} templateRows="auto" gap={8} p={4} mb={6}  >
 
             <PortfolioItem {...data[0]}></PortfolioItem>
             <PortfolioItem {...data[1]}></PortfolioItem>
