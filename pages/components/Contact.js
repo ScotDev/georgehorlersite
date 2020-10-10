@@ -86,7 +86,7 @@ export default function Contact() {
                     handleBlur,
                     handleSubmit,
                     isSubmitting, }) => (
-                        <Form onSubmit={handleSubmit} style={{ width: "90%" }}>
+                        <Form onSubmit={handleSubmit} style={{ width: "95%" }}>
 
                             <FormControl >
                                 <FormLabel htmlFor="name" mx={2}>Name*</FormLabel>
